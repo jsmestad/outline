@@ -14,8 +14,4 @@ export const sequelize = new Sequelize(process.env.DATABASE_URL, {
   logging: debug('sql'),
   typeValidation: true,
   operatorsAliases: false,
-  dialect: 'postgres',
-  dialectOptions: {
-    ssl: true
-  }
 });
